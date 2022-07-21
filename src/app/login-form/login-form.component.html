@@ -1,0 +1,9 @@
+<p>login-form works!</p>
+
+<input type="text" [(ngModel)]="user.username" placeholder="username">
+<input type="text" [(ngModel)]="user.password" placeholder="password">
+
+<button (click)="login()">Login</button>
+<button (click)="register()">register</button>
+
+<p class='error'>{{errorMsg | json}}</p>
